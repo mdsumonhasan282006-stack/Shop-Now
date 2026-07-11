@@ -1,0 +1,1 @@
+document.querySelector('button').onclick=()=>alert('Added to cart');
