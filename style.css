@@ -1,0 +1,166 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+}
+
+header{
+    background:#f85606;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+    flex-wrap:wrap;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+.search{
+    width:40%;
+    padding:10px;
+    border:none;
+    border-radius:5px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-weight:bold;
+}
+
+.banner{
+    background:linear-gradient(to right,#ff6a00,#ff9800);
+    color:white;
+    text-align:center;
+    padding:60px 20px;
+}
+
+.banner h1{
+    font-size:45px;
+}
+
+.banner p{
+    margin:15px 0;
+    font-size:20px;
+}
+
+.banner button{
+    background:white;
+    color:#f85606;
+    border:none;
+    padding:12px 25px;
+    border-radius:5px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+.title{
+    margin:30px;
+}
+
+.categories{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
+    padding:0 30px;
+}
+
+.categories div{
+    background:white;
+    text-align:center;
+    padding:25px;
+    border-radius:8px;
+    font-size:20px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.categories div:hover{
+    background:#f85606;
+    color:white;
+}
+
+.products{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    padding:30px;
+}
+
+.card{
+    background:white;
+    border-radius:8px;
+    padding:15px;
+    text-align:center;
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card img{
+    width:100%;
+    border-radius:5px;
+}
+
+.price{
+    color:#f85606;
+    font-size:22px;
+    font-weight:bold;
+    margin:10px 0;
+}
+
+.card button{
+    background:#f85606;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.card button:hover{
+    background:#d84d05;
+}
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+}
+
+@media(max-width:768px){
+    header{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .search{
+        width:100%;
+    }
+
+    nav{
+        display:flex;
+        gap:15px;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .banner h1{
+        font-size:30px;
+    }
+}
